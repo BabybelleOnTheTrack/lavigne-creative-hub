@@ -34,8 +34,8 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
     >
       <div className="flex flex-col lg:flex-row">
         {/* Carousel */}
-        <div className="relative w-full lg:w-80 shrink-0">
-          <div className="aspect-[4/3] lg:aspect-square overflow-hidden bg-muted">
+        <div className="relative w-full lg:w-56 shrink-0">
+          <div className="aspect-[4/3] overflow-hidden bg-muted">
             <img
               src={project.images[currentImage]}
               alt={`${project.title} - Image ${currentImage + 1}`}
