@@ -39,9 +39,9 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
             <img
               src={project.images[currentImage]}
               alt={`${project.title} - Image ${currentImage + 1}`}
-              className="w-full h-full object-cover transition-transform duration-200 ease-out"
+              className="w-full h-full object-cover transition-transform duration-500 ease-out"
               key={currentImage}
-              style={{ animation: 'slideIn 0.2s ease-out' }}
+              style={{ animation: 'slideIn 0.5s ease-out' }}
             />
           </div>
           
@@ -104,7 +104,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           
           {/* Action */}
           <div>
-            <Button asChild variant="default" size="sm" className="gap-2">
+            <Button asChild variant="default" size="sm" className="gap-2 transition-transform duration-200 hover:scale-110">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 Voir le projet
                 <ExternalLink className="w-3.5 h-3.5" />
