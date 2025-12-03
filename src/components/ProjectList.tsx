@@ -2,6 +2,7 @@ import ProjectCard from "./ProjectCard";
 import projectImage from "@/assets/project-image.jpg";
 import avionRc1 from "@/assets/avion-rc-1.jpg";
 import avionRc2 from "@/assets/avion-rc-2.jpg";
+import secretSanta from "@/assets/secret-santa.png";
 
 export interface Project {
   id: string;
@@ -37,7 +38,7 @@ export const projects: Project[] = [
     description:
       "Application web permettant d'organiser facilement des Pères Noël secrets entre amis ou en famille. Tirage au sort automatique, liste de souhaits et rappels par email. GRATUIT",
     tags: ["Web", "Application"],
-    images: [projectImage, projectImage, projectImage],
+    images: [secretSanta],
     link: "https://google.com",
   },
   {
