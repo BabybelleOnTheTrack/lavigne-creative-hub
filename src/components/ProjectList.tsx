@@ -16,7 +16,8 @@ export const projects: Project[] = [
   {
     id: "avion-rc",
     title: "Construction d'avion Radio Commandé",
-    description: "Projet de construction d'un avion télécommandé de A à Z. De la conception des plans à l'assemblage final, en passant par la découpe des matériaux et l'installation de l'électronique de vol.",
+    description:
+      "Projet de construction d'un avion télécommandé de A à Z. De la conception des plans à l'assemblage final, en passant par la découpe des matériaux et l'installation de l'électronique de vol.",
     tags: ["Aéronautique", "DIY", "Électronique"],
     images: [avionRc1, avionRc2],
     link: "https://payhip.com/AVIONLAVIGNE",
@@ -24,7 +25,8 @@ export const projects: Project[] = [
   {
     id: "clement-ader",
     title: "Hommage à Clément Ader",
-    description: "Site web dédié à Clément Ader, pionnier de l'aviation française. Découvrez l'histoire de cet inventeur visionnaire et ses contributions majeures à l'aéronautique.",
+    description:
+      "Site web dédié à Clément Ader, pionnier de l'aviation française. Découvrez l'histoire de cet inventeur visionnaire et ses contributions majeures à l'aéronautique.",
     tags: ["Web", "Histoire", "Aéronautique"],
     images: [projectImage, projectImage, projectImage],
     link: "https://google.com",
@@ -32,15 +34,17 @@ export const projects: Project[] = [
   {
     id: "secret-santa",
     title: "Père Noël Secret",
-    description: "Application web permettant d'organiser facilement des Pères Noël secrets entre amis ou en famille. Tirage au sort automatique, liste de souhaits et rappels par email.",
-    tags: ["Web", "Application", "Social"],
+    description:
+      "Application web permettant d'organiser facilement des Pères Noël secrets entre amis ou en famille. Tirage au sort automatique, liste de souhaits et rappels par email. GRATUIT",
+    tags: ["Web", "Application"],
     images: [projectImage, projectImage, projectImage],
     link: "https://google.com",
   },
   {
     id: "studio-jv",
     title: "Studio de Jeux Vidéo",
-    description: "Site vitrine pour un studio indépendant de jeux vidéo. Présentation des projets en cours, de l'équipe et des actualités du studio.",
+    description:
+      "Site vitrine pour un studio indépendant de jeux vidéo. Présentation des projets en cours, de l'équipe et des actualités du studio.",
     tags: ["Web", "Jeux Vidéo", "Design"],
     images: [projectImage, projectImage, projectImage],
     link: "https://google.com",
@@ -55,9 +59,7 @@ const ProjectList = ({ filteredProjects }: ProjectListProps) => {
   if (filteredProjects.length === 0) {
     return (
       <div className="container py-12 text-center">
-        <p className="text-muted-foreground">
-          Aucun projet ne correspond à votre recherche.
-        </p>
+        <p className="text-muted-foreground">Aucun projet ne correspond à votre recherche.</p>
       </div>
     );
   }
