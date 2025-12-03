@@ -9,7 +9,7 @@ const Header = () => {
           Lavigne
         </a>
         <Button variant="outline" size="sm" className="gap-2" asChild>
-          <a href="mailto:contact@lavigne.fr">
+          <a href="mailto:this.is.babybelle@gmail.com">
             <Mail className="h-4 w-4" />
             Me Contacter
           </a>
