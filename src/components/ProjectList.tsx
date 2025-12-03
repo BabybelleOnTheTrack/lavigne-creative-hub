@@ -1,5 +1,7 @@
 import ProjectCard from "./ProjectCard";
 import projectImage from "@/assets/project-image.jpg";
+import avionRc1 from "@/assets/avion-rc-1.jpg";
+import avionRc2 from "@/assets/avion-rc-2.jpg";
 
 export interface Project {
   id: string;
@@ -13,11 +15,11 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "avion-rc",
-    title: "Construction d'un Avion RC",
+    title: "Construction d'avion Radio Commandé",
     description: "Projet de construction d'un avion télécommandé de A à Z. De la conception des plans à l'assemblage final, en passant par la découpe des matériaux et l'installation de l'électronique de vol.",
     tags: ["Aéronautique", "DIY", "Électronique"],
-    images: [projectImage, projectImage, projectImage],
-    link: "https://google.com",
+    images: [avionRc1, avionRc2],
+    link: "https://payhip.com/AVIONLAVIGNE",
   },
   {
     id: "clement-ader",
