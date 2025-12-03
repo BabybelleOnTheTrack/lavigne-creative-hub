@@ -56,8 +56,25 @@ const Index = () => {
         <ProjectList filteredProjects={filteredProjects} />
       </main>
       <footer className="border-t border-border/50 py-6">
-        <div className="container text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Lavigne. Tous droits réservés.
+        <div className="container flex flex-col items-center gap-3 text-sm text-muted-foreground">
+          <div className="flex items-center gap-4">
+            <a 
+              href="mailto:this.is.babybelle@gmail.com" 
+              className="hover:text-primary transition-colors"
+            >
+              this.is.babybelle@gmail.com
+            </a>
+            <span>|</span>
+            <a 
+              href="https://www.youtube.com/@Babou_bricolage" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors"
+            >
+              YouTube
+            </a>
+          </div>
+          <div>© {new Date().getFullYear()} Lavigne. Tous droits réservés.</div>
         </div>
       </footer>
     </div>
