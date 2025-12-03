@@ -11,7 +11,7 @@ const Header = () => {
         <Button variant="outline" size="sm" className="gap-2" asChild>
           <a href="mailto:contact@lavigne.fr">
             <Mail className="h-4 w-4" />
-            Contacter
+            Me Contacter
           </a>
         </Button>
       </div>
