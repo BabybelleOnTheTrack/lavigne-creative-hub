@@ -2,50 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono:wght@400;700&display=swap');
 
 @layer base {
   :root {
-    --background: 40 30% 95%;
-    --foreground: 30 20% 20%;
+    --background: 60 10% 96%;
+    --foreground: 240 10% 10%;
 
-    --card: 40 25% 98%;
-    --card-foreground: 30 20% 20%;
+    --card: 60 20% 99%;
+    --card-foreground: 240 10% 10%;
 
-    --popover: 40 25% 98%;
-    --popover-foreground: 30 20% 20%;
+    --popover: 60 20% 99%;
+    --popover-foreground: 240 10% 10%;
 
-    --primary: 25 45% 45%;
-    --primary-foreground: 40 30% 98%;
+    --primary: 220 80% 40%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 35 25% 90%;
-    --secondary-foreground: 30 20% 25%;
+    --secondary: 60 10% 90%;
+    --secondary-foreground: 240 10% 20%;
 
-    --muted: 35 20% 92%;
-    --muted-foreground: 30 15% 45%;
+    --muted: 60 10% 92%;
+    --muted-foreground: 240 5% 40%;
 
-    --accent: 180 25% 35%;
-    --accent-foreground: 40 30% 98%;
+    --accent: 280 60% 45%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 35 20% 88%;
-    --input: 35 20% 88%;
-    --ring: 25 45% 45%;
+    --border: 240 10% 70%;
+    --input: 240 10% 70%;
+    --ring: 220 80% 40%;
 
-    --radius: 0.75rem;
+    --radius: 0px;
 
     /* Custom design tokens */
-    --font-display: 'Montserrat', sans-serif;
-    --font-body: 'Montserrat', sans-serif;
+    --font-display: 'VT323', monospace;
+    --font-body: 'Space Mono', monospace;
     
-    --shadow-soft: 0 4px 20px -4px hsl(20 10% 15% / 0.08);
-    --shadow-card: 0 8px 30px -8px hsl(20 10% 15% / 0.1);
-    --shadow-hover: 0 12px 40px -12px hsl(20 10% 15% / 0.15);
+    --shadow-soft: 2px 2px 0px hsl(240 10% 70%);
+    --shadow-card: 3px 3px 0px hsl(240 10% 60%);
+    --shadow-hover: 4px 4px 0px hsl(220 80% 40%);
     
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    --transition-smooth: all 0.1s ease;
+    --transition-bounce: all 0.15s ease;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -58,33 +58,33 @@
   }
 
   .dark {
-    --background: 30 20% 8%;
-    --foreground: 45 25% 95%;
+    --background: 240 10% 10%;
+    --foreground: 120 100% 70%;
 
-    --card: 30 15% 12%;
-    --card-foreground: 45 25% 95%;
+    --card: 240 10% 15%;
+    --card-foreground: 120 100% 70%;
 
-    --popover: 30 15% 12%;
-    --popover-foreground: 45 25% 95%;
+    --popover: 240 10% 15%;
+    --popover-foreground: 120 100% 70%;
 
-    --primary: 165 55% 45%;
-    --primary-foreground: 45 30% 98%;
+    --primary: 120 100% 50%;
+    --primary-foreground: 240 10% 10%;
 
-    --secondary: 30 15% 18%;
-    --secondary-foreground: 45 20% 85%;
+    --secondary: 240 10% 20%;
+    --secondary-foreground: 120 80% 60%;
 
-    --muted: 30 12% 20%;
-    --muted-foreground: 40 15% 60%;
+    --muted: 240 8% 25%;
+    --muted-foreground: 120 50% 50%;
 
-    --accent: 12 70% 50%;
-    --accent-foreground: 45 30% 98%;
+    --accent: 300 100% 60%;
+    --accent-foreground: 240 10% 10%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 30 12% 20%;
-    --input: 30 12% 20%;
-    --ring: 165 55% 45%;
+    --border: 120 50% 30%;
+    --input: 120 50% 30%;
+    --ring: 120 100% 50%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -139,6 +139,20 @@
   
   .transition-bounce {
     transition: var(--transition-bounce);
+  }
+}
+
+@layer components {
+  .tag {
+    @apply inline-flex items-center px-2 py-0.5 border-2 border-border text-xs font-body bg-secondary text-secondary-foreground transition-smooth cursor-pointer uppercase tracking-wider;
+  }
+  
+  .tag:hover {
+    @apply bg-primary text-primary-foreground border-primary;
+  }
+  
+  .tag.active {
+    @apply bg-primary text-primary-foreground border-primary;
   }
 }
 
