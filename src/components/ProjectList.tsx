@@ -20,7 +20,7 @@ export const projects: Project[] = [
     description:
       "Projet de construction d'un avion télécommandé de A à Z. De la conception des plans à l'assemblage final, en passant par la découpe des matériaux et l'installation de l'électronique de vol.",
     tags: ["Aéronautique", "DIY", "Électronique"],
-    images: [avionRc1, avionRc2],
+    images: [avionRc2, avionRc1],
     link: "https://payhip.com/AVIONLAVIGNE",
   },
   {
