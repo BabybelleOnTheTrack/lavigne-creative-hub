@@ -39,7 +39,7 @@ export const projects: Project[] = [
       "Application web permettant d'organiser facilement des Pères Noël secrets entre amis ou en famille. Tirage au sort automatique, liste de souhaits et rappels par email. GRATUIT",
     tags: ["Web", "Application"],
     images: [secretSanta],
-    link: "https://google.com",
+    link: "https://secret-santa-two-dusky.vercel.app",
   },
   {
     id: "studio-jv",
