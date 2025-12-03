@@ -12,13 +12,11 @@ const AboutSection = () => {
           />
         </div>
         <div className="text-center sm:text-left">
-          <h2 className="font-display text-xl font-medium text-foreground mb-2">
-            Bonjour, moi c'est Lavigne
-          </h2>
+          <h2 className="font-display text-xl font-medium text-foreground mb-2">Salut, voici mes projets !</h2>
           <p className="text-muted-foreground leading-relaxed">
-            Passionné par une multitude de domaines, je m'investis dans des projets variés : 
-            de l'aéronautique au développement web, en passant par les jeux vidéo. 
-            Ce hub rassemble tous mes projets, aussi différents soient-ils.
+            Passionné par une plein de truc, je m'investis dans des projets variés : de l'aéronautique au développement
+            web, en passant par la programation de jeux vidéo. Ce hub rassemble tous mes projets, aussi différents
+            soient-ils. A. Lavigne
           </p>
         </div>
       </div>
