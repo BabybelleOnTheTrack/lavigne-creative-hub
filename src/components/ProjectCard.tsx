@@ -39,7 +39,9 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
             <img
               src={project.images[currentImage]}
               alt={`${project.title} - Image ${currentImage + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-transform duration-200 ease-out"
+              key={currentImage}
+              style={{ animation: 'slideIn 0.2s ease-out' }}
             />
           </div>
           
@@ -81,9 +83,9 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
         <div className="flex-1 p-4 flex flex-col">
           <div className="flex-1">
             <h3 className="font-display text-2xl text-primary mb-2">
-              &gt; {project.title}
+              {project.title}
             </h3>
-            <p className="text-muted-foreground leading-relaxed mb-3 text-sm">
+            <p className="text-muted-foreground leading-relaxed mb-3 text-sm font-body">
               {project.description}
             </p>
             
@@ -94,7 +96,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
                   key={tag}
                   className="inline-flex items-center px-2 py-0.5 border border-border text-xs font-body bg-secondary text-secondary-foreground uppercase"
                 >
-                  [{tag}]
+                  {tag}
                 </span>
               ))}
             </div>
@@ -104,7 +106,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           <div>
             <Button asChild variant="default" size="sm" className="gap-2">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                [Voir le projet]
+                Voir le projet
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </Button>
