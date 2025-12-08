@@ -6,16 +6,15 @@ import planAvion from "@/assets/plan-avion-bedelia.png";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const components = [
-  { name: "Moteur brushless 2212", poids: "50g", prix: "15€" },
-  { name: "Servo 3.6g (x3)", poids: "11g", prix: "12€" },
-  { name: "Batterie LiPo 3S 450mAh", poids: "45g", prix: "18€" },
-  { name: "Contrôleur ESC 30A", poids: "25g", prix: "10€" },
-  { name: "Récepteur 6 voies", poids: "8g", prix: "15€" },
-  { name: "Bois balsa (planche)", poids: "variable", prix: "8€" },
-  { name: "Contreplaqué 3mm", poids: "variable", prix: "5€" },
-  { name: "Hélice 10x4.5", poids: "15g", prix: "4€" },
-  { name: "Roues mousse (x3)", poids: "20g", prix: "6€" },
-  { name: "Fils et connecteurs", poids: "10g", prix: "5€" },
+  { name: "Moteur brushless 2212", poids: "50g", prix: "7€" },
+  { name: "Servo 3.6g (x3)", poids: "11g", prix: "5€" },
+  { name: "Batterie LiPo 3S 450mAh", poids: "38g", prix: "18€" },
+  { name: "Contrôleur ESC 30A", poids: "25g", prix: "8€" },
+  { name: "Récepteur 4 voies FS2A", poids: "2g", prix: "4€" },
+  { name: "Bois balsa (planche) 100*10*2 x2", poids: "variable", prix: "10€" },
+  { name: "Contreplaqué 3mm 20*10 x1", poids: "variable", prix: "5€" },
+  { name: "Hélice 8x4.5", poids: "4g", prix: "4€" },
+  { name: "Roues mousse (x3)", poids: "8g", prix: "6€" },
 ];
 
 const AvionBedelia = () => {
