@@ -52,8 +52,8 @@ const AvionBedelia = () => {
             <div className="flex gap-4 items-start">
               <div className="flex-1">
                 <p className="font-body leading-relaxed">
-                  Bédélia est une marque de voiture française fondée en 1902. La marque a construit environ 3000 véhicules,
-                  et il n'en reste aujourd'hui que 30 exemplaires dans le monde ! Ce que peu de gens savent,
+                  Bédélia est une marque de voiture française fondée en 1902. La marque a construit environ 3000
+                  véhicules, et il n'en reste aujourd'hui que 30 exemplaires dans le monde ! Ce que peu de gens savent,
                   c'est que son fondateur a également construit un avion. L'existence de cet appareil a été complètement
                   ignorée pendant 105 ans !
                 </p>
@@ -68,7 +68,7 @@ const AvionBedelia = () => {
               des descriptions fragmentaires sont tout ce qui reste de cette machine volante pionnière.
             </p>
             <p className="font-body leading-relaxed text-primary">
-              Si vous possédez des informations ou des documents sur l'avion Bédélia, n'hésitez pas à nous contacter : {" "}
+              Si vous possédez des informations ou des documents sur l'avion Bédélia, n'hésitez pas à nous contacter :{" "}
               <a href="mailto:lesamisdebedelia@gmail.com" className="underline hover:no-underline">
                 lesamisdebedelia@gmail.com
               </a>
@@ -99,7 +99,9 @@ const AvionBedelia = () => {
             </p>
             <div className="border-2 border-border p-1 bg-card w-64 my-4">
               <img src={porcoRossoConcept} alt="Concept art Porco Rosso - Miyazaki" className="w-full" />
-              <p className="text-xs text-muted-foreground text-center mt-1 font-body">Concept art Porco Rosso - Miyazaki</p>
+              <p className="text-xs text-muted-foreground text-center mt-1 font-body">
+                Concept art Porco Rosso - Miyazaki
+              </p>
             </div>
           </div>
 
@@ -208,36 +210,36 @@ const AvionBedelia = () => {
           <ul className="space-y-3 font-body">
             <li>
               <a
-                href="https://www.amisdebedelia.fr"
+                href="https://www.facebook.com/lesamisdebedelia/?locale=fr_FR"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline"
               >
                 Les Amis de Bédélia
               </a>
-              <span className="text-muted-foreground"> - Association de passionnés</span>
+              <span className="text-muted-foreground"> - Association </span>
             </li>
             <li>
               <a
-                href="https://www.museemontagnoire.fr"
+                href="http://a.p.p.a.r.a.t.free.fr/nous_contacter_026.htm"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline"
               >
                 Musée de la Montagne Noire
               </a>
-              <span className="text-muted-foreground"> - Histoire locale et aéronautique</span>
+              <span className="text-muted-foreground"> - Musée </span>
             </li>
             <li>
               <a
-                href="https://www.late28.fr"
+                href="https://late28.fr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline"
               >
                 Laté 28
               </a>
-              <span className="text-muted-foreground"> - Restauration d'avions historiques</span>
+              <span className="text-muted-foreground"> - Restauration du late 28 </span>
             </li>
             <li>
               <a
@@ -248,7 +250,7 @@ const AvionBedelia = () => {
               >
                 Les Avions Lavigne
               </a>
-              <span className="text-muted-foreground"> - Mes plans de maquettes</span>
+              <span className="text-muted-foreground"> - Mes plans de maquettes (gratuit et payant)</span>
             </li>
             <li>
               <a
@@ -259,7 +261,7 @@ const AvionBedelia = () => {
               >
                 Ma chaîne YouTube
               </a>
-              <span className="text-muted-foreground"> - Tutoriels et constructions</span>
+              <span className="text-muted-foreground"> - mon ptit kiff</span>
             </li>
           </ul>
         </section>
@@ -268,7 +270,7 @@ const AvionBedelia = () => {
       {/* Footer */}
       <footer className="border-t-2 border-border py-6 bg-card">
         <div className="container text-center">
-          <p className="font-body text-muted-foreground">© 2024 Lavigne - Projet Avion Bédélia</p>
+          <p className="font-body text-muted-foreground"> 2025 Lavigne - Projet Avion Bédélia</p>
         </div>
       </footer>
     </div>
