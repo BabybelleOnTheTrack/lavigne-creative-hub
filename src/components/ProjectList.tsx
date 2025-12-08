@@ -3,6 +3,7 @@ import projectImage from "@/assets/project-image.jpg";
 import avionRc1 from "@/assets/avion-rc-1.jpg";
 import avionRc2 from "@/assets/avion-rc-2.jpg";
 import secretSanta from "@/assets/secret-santa.png";
+import avionBedelia from "@/assets/avion-bedelia.png";
 
 export interface Project {
   id: string;
@@ -11,9 +12,20 @@ export interface Project {
   tags: string[];
   images: string[];
   link: string;
+  isInternal?: boolean;
 }
 
 export const projects: Project[] = [
+  {
+    id: "avion-bedelia",
+    title: "Avion Bédélia",
+    description:
+      "Mon projet le plus ambitieux : reproduire l'avion Bédélia, un appareil de 1910 dont l'existence a été ignorée pendant 105 ans. Construction en taille réelle, biplace et à moteur électrique.",
+    tags: ["Aéronautique", "Histoire", "DIY"],
+    images: [avionBedelia],
+    link: "/avion-bedelia",
+    isInternal: true,
+  },
   {
     id: "avion-rc",
     title: "Construction d'avion Radio Commandé",
