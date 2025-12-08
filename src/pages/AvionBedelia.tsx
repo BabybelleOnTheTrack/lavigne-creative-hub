@@ -2,12 +2,13 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Download, ArrowLeft, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 import avionBedelia from "@/assets/avion-bedelia.png";
+import planAvion from "@/assets/plan-avion-bedelia.png";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const components = [
   { name: "Moteur brushless 2212", poids: "50g", prix: "15€" },
-  { name: "Servo 9g (x3)", poids: "27g", prix: "12€" },
-  { name: "Batterie LiPo 3S 1300mAh", poids: "110g", prix: "18€" },
+  { name: "Servo 3.6g (x3)", poids: "11g", prix: "12€" },
+  { name: "Batterie LiPo 3S 450mAh", poids: "45g", prix: "18€" },
   { name: "Contrôleur ESC 30A", poids: "25g", prix: "10€" },
   { name: "Récepteur 6 voies", poids: "8g", prix: "15€" },
   { name: "Bois balsa (planche)", poids: "variable", prix: "8€" },
@@ -160,7 +161,7 @@ const AvionBedelia = () => {
 
           <div className="flex flex-wrap gap-4">
             <Button asChild className="gap-2">
-              <a href="https://payhip.com/AVIONLAVIGNE" target="_blank" rel="noopener noreferrer">
+              <a href="/plans/Proto_fuselage_Balsa2mm_V3.svg" download="Plan_Avion_Bedelia_1-9.svg">
                 <Download className="w-4 h-4" />
                 Télécharger le plan
               </a>
@@ -171,6 +172,13 @@ const AvionBedelia = () => {
                 Voir mes autres plans
               </a>
             </Button>
+          </div>
+
+          <div className="border-2 border-border p-2 bg-card mt-6">
+            <img src={planAvion} alt="Aperçu du plan SVG de l'avion Bédélia 1/9" className="w-full" />
+            <p className="text-sm text-muted-foreground text-center mt-2 font-body">
+              Aperçu du plan de découpe pour la maquette 1/9
+            </p>
           </div>
         </section>
 
