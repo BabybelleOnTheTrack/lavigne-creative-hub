@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Download, ArrowLeft, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 import avionBedelia from "@/assets/avion-bedelia.png";
+import bedeliaVoiture from "@/assets/bedelia-voiture.jpg";
 import planAvion from "@/assets/plan-avion-bedelia.png";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
@@ -47,11 +48,20 @@ const AvionBedelia = () => {
         <section className="mb-12">
           <h2 className="font-display text-2xl md:text-3xl mb-6 border-b-2 border-border pb-2">1. L'Histoire</h2>
           <div className="space-y-4">
-            <p className="font-body leading-relaxed">
-              Bédélia est une marque de voiture française fondée au début du XXe siècle. Ce que peu de gens savent,
-              c'est que son fondateur a également construit un avion. L'existence de cet appareil a été complètement
-              ignorée pendant 105 ans !
-            </p>
+            <div className="flex gap-4 items-start">
+              <div className="flex-1">
+                <p className="font-body leading-relaxed">
+                  Bédélia est une marque de voiture française fondée en 1902. La marque a construit environ 3000 véhicules,
+                  et il n'en reste aujourd'hui que 30 exemplaires dans le monde ! Ce que peu de gens savent,
+                  c'est que son fondateur a également construit un avion. L'existence de cet appareil a été complètement
+                  ignorée pendant 105 ans !
+                </p>
+              </div>
+              <div className="border-2 border-border p-1 bg-card shrink-0 w-48">
+                <img src={bedeliaVoiture} alt="Voiture Bédélia de 1913" className="w-full" />
+                <p className="text-xs text-muted-foreground text-center mt-1 font-body">Bédélia 1913</p>
+              </div>
+            </div>
             <p className="font-body leading-relaxed">
               Redécouvert en 2015, nous ne possédons que très peu de documents à son sujet. Quelques photos d'époque et
               des descriptions fragmentaires sont tout ce qui reste de cette machine volante pionnière.
