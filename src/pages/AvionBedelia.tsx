@@ -6,6 +6,7 @@ import bedeliaVoiture from "@/assets/bedelia-voiture.jpg";
 import planAvion from "@/assets/plan-avion-bedelia.png";
 import porcoRossoConcept from "@/assets/porco-rosso-concept.jpg";
 import bleriot11Prototype from "@/assets/bleriot-11-prototype.png";
+import brevetBedelia from "@/assets/brevet-bedelia.png";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const components = [
@@ -44,6 +45,10 @@ const AvionBedelia = () => {
             Bienvenue dans mon projet le plus ambitieux : la reconstruction de l'avion Bédélia, un appareil de 1910
             tombé dans l'oubli pendant plus de 105 ans.
           </p>
+          <div className="border-2 border-border p-1 bg-card w-64 md:w-80 mt-4">
+            <img src={brevetBedelia} alt="Brevet de l'avion Bédélia - 1910" className="w-full" />
+            <p className="text-xs text-muted-foreground text-center mt-1 font-body">Brevet de l'avion Bédélia</p>
+          </div>
         </section>
 
         {/* Histoire */}
