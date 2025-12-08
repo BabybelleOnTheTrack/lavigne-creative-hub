@@ -103,6 +103,14 @@ const AvionBedelia = () => {
                 Concept art Porco Rosso - Miyazaki
               </p>
             </div>
+            <a
+              href="https://www.instagram.com/babou_ama/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline inline-block"
+            >
+              → Voir l'avancement du projet
+            </a>
           </div>
 
           {/* Les 5 étapes */}
@@ -130,6 +138,14 @@ const AvionBedelia = () => {
                 <span>Réalisation de l'avion taille 1/1 - Le vrai, le grand, le magnifique !</span>
               </li>
             </ol>
+            <a
+              href="https://www.instagram.com/babou_ama/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline inline-block mt-4"
+            >
+              → Voir l'avancement du projet
+            </a>
           </div>
         </section>
 
@@ -227,9 +243,17 @@ const AvionBedelia = () => {
               .
             </p>
             <p className="text-muted-foreground italic">
-              Un grand merci à Hugo d'Ipsolair dont les explications (et la bière ) qui m'ont encouragé à emprunter
-              cette voie.
+              Un grand merci à Hugo d'Ipsolair dont les explications — partagées autour d'une bière — m'ont encouragé à
+              emprunter cette voie.
             </p>
+            <a
+              href="https://www.instagram.com/ips_olaire/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline inline-block mt-2"
+            >
+              → Suivre leur aventure
+            </a>
           </div>
         </section>
 
