@@ -204,6 +204,38 @@ const AvionBedelia = () => {
           </div>
         </section>
 
+        {/* Moteur électrique */}
+        <section className="mb-12">
+          <h2 className="font-display text-2xl md:text-3xl mb-6 border-b-2 border-border pb-2">
+            4. Un Moteur Électrique ?
+          </h2>
+          <div className="space-y-4 font-body leading-relaxed">
+            <p>
+              L'avion Bédélia était <strong>un objet de pointe technologique</strong>, apparu en 1910, seulement 4 ans
+              après le prix Ernest Archdeacon du kilomètre en circuit fermé. Mettre un moteur thermique, c'est juste une
+              reproduction du passé.
+            </p>
+            <p>
+              <strong>Mon but, dans une démarche d'innover et de faire avancer à mon humble taille l'aviation</strong>,
+              est d'y mettre un moteur électrique pour <strong>démocratiser cette technologie</strong>.
+            </p>
+            <p>
+              Certes, ça ne sera pas l'avion le plus fin, le plus aérodynamique ou le plus maniable, mais{" "}
+              <strong>
+                si un fuselage de 115 ans peut voler avec un moteur électrique, alors tous nos aéronefs le peuvent
+              </strong>
+              .
+            </p>
+            <p className="text-muted-foreground italic">
+              Merci à Hugo de Ipsolair pour ces quelques explications autour d'une bière qui me poussent à prendre ce
+              chemin.
+            </p>
+            <p className="text-primary font-display text-lg mt-4">
+              Le premier avion d'avant la 1ère Guerre Mondiale retrofité ! :)
+            </p>
+          </div>
+        </section>
+
         {/* Projets et associations préférés */}
         <section className="mb-12 border-2 border-border bg-card p-6">
           <h2 className="font-display text-2xl md:text-3xl mb-6">Mes Projets et Associations Préférés</h2>
