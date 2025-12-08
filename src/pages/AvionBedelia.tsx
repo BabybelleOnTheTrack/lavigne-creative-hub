@@ -319,7 +319,7 @@ const AvionBedelia = () => {
           <div className="border-2 border-border p-2 bg-card">
             <img src={bleriot11Prototype} alt="Prototype d'un Blériot 11 volant" className="w-full" />
             <p className="text-sm text-muted-foreground text-center mt-2 font-body">
-              Exemple d'un prototype d'un Blériot 11 volant
+              Exemple d'un prototype d'un Blériot 11 en cours de réalisation - AVION LAVIGNE
             </p>
           </div>
         </section>
