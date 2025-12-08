@@ -40,7 +40,7 @@ const AvionBedelia = () => {
           <h2 className="font-display text-3xl md:text-4xl mb-6 border-b-2 border-border pb-2">
             Mon Plus Grand Projet
           </h2>
-          <p className="font-body text-lg leading-relaxed">
+          <p className="font-body text-sm md:text-lg leading-relaxed">
             Bienvenue dans mon projet le plus ambitieux : la reconstruction de l'avion Bédélia, un appareil de 1910
             tombé dans l'oubli pendant plus de 105 ans.
           </p>
@@ -52,7 +52,7 @@ const AvionBedelia = () => {
           <div className="space-y-4">
             <div className="flex gap-4 items-start">
               <div className="flex-1">
-                <p className="font-body leading-relaxed">
+                <p className="font-body text-xs md:text-base leading-relaxed">
                   Bédélia est une marque de voiture française fondée en 1902. La marque a construit environ 3000
                   véhicules, et il n'en reste aujourd'hui que 30 exemplaires dans le monde ! Ce que peu de gens savent,
                   c'est que son fondateur a également construit un avion. L'existence de cet appareil a été complètement
@@ -64,11 +64,11 @@ const AvionBedelia = () => {
                 <p className="text-xs text-muted-foreground text-center mt-1 font-body">Bédélia 1913</p>
               </div>
             </div>
-            <p className="font-body leading-relaxed">
+            <p className="font-body text-xs md:text-base leading-relaxed">
               Redécouvert en 2015, nous ne possédons que très peu de documents à son sujet. Quelques photos d'époque et
               des descriptions fragmentaires sont tout ce qui reste de cette machine volante pionnière.
             </p>
-            <p className="font-body leading-relaxed text-primary">
+            <p className="font-body text-xs md:text-base leading-relaxed text-primary">
               Si vous possédez des informations ou des documents sur l'avion Bédélia, n'hésitez pas à nous contacter :{" "}
               <a href="mailto:lesamisdebedelia@gmail.com" className="underline hover:no-underline">
                 lesamisdebedelia@gmail.com
@@ -89,12 +89,12 @@ const AvionBedelia = () => {
             2. Le Projet de Reconstruction
           </h2>
           <div className="space-y-4">
-            <p className="font-body leading-relaxed">
+            <p className="font-body text-xs md:text-base leading-relaxed">
               J'ai toujours voulu construire un avion inspiré des films de Miyazaki. Ces machines volantes poétiques,
               entre steampunk et rêverie, m'ont fasciné depuis mon enfance. L'avion Bédélia, avec son design d'une autre
               époque, correspond parfaitement à cette esthétique.
             </p>
-            <p className="font-body leading-relaxed">
+            <p className="font-body text-xs md:text-base leading-relaxed">
               Je vais donc construire une <strong>interprétation de l'avion Bédélia</strong>, en taille réelle, biplace
               et à moteur électrique.
             </p>
@@ -114,8 +114,8 @@ const AvionBedelia = () => {
 
           {/* Les 5 étapes */}
           <div className="mt-8 border-2 border-border bg-card p-6">
-            <h3 className="font-display text-xl mb-4">Les 5 Étapes du Projet</h3>
-            <ol className="space-y-3 font-body">
+            <h3 className="font-display text-lg md:text-xl mb-4">Les 5 Étapes du Projet</h3>
+            <ol className="space-y-3 font-body text-xs md:text-base">
               <li className="flex gap-3">
                 <span className="font-display text-primary">1.</span>
                 <span>Récupération de documentation et réalisation des dessins préparatoires</span>
@@ -146,7 +146,7 @@ const AvionBedelia = () => {
             3. Détails de l'Étape 1 - Maquette 1/9
           </h2>
 
-          <h3 className="font-display text-xl mb-4">Liste des Composants</h3>
+          <h3 className="font-display text-lg md:text-xl mb-4">Liste des Composants</h3>
           <div className="border-2 border-border overflow-hidden mb-6">
             <Table>
               <TableHeader>
@@ -182,8 +182,8 @@ const AvionBedelia = () => {
             </Button>
           </div>
 
-          <h3 className="font-display text-xl mb-4">Technique de Montage</h3>
-          <p className="font-body leading-relaxed mb-6">
+          <h3 className="font-display text-lg md:text-xl mb-4">Technique de Montage</h3>
+          <p className="font-body text-xs md:text-base leading-relaxed mb-6">
             La maquette est construite principalement en bois balsa et contreplaqué. Les techniques de découpe et
             d'assemblage sont détaillées dans mes plans téléchargeables.
           </p>
@@ -222,7 +222,7 @@ const AvionBedelia = () => {
           <h2 className="font-display text-2xl md:text-3xl mb-6 border-b-2 border-border pb-2">
             4. Un Moteur Électrique ?
           </h2>
-          <div className="space-y-4 font-body leading-relaxed">
+          <div className="space-y-4 font-body text-xs md:text-base leading-relaxed">
             <p>
               L'avion Bédélia représentait <strong>une véritable prouesse technologique en 1910</strong>. Y installer
               aujourd'hui un moteur thermique ne serait qu'une simple reproduction du passé.
@@ -255,7 +255,7 @@ const AvionBedelia = () => {
         {/* Projets et associations préférés */}
         <section className="mb-12 border-2 border-border bg-card p-6">
           <h2 className="font-display text-2xl md:text-3xl mb-6">Mes Projets et Associations Préférés</h2>
-          <ul className="space-y-3 font-body">
+          <ul className="space-y-3 font-body text-xs md:text-base">
             <li>
               <a
                 href="https://www.facebook.com/lesamisdebedelia/?locale=fr_FR"
