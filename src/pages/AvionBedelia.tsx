@@ -227,8 +227,8 @@ const AvionBedelia = () => {
               .
             </p>
             <p className="text-muted-foreground italic">
-              Un grand merci à Hugo d'Ipsolair dont les explications — partagées autour d'une bière — m'ont encouragé à
-              emprunter cette voie.
+              Un grand merci à Hugo d'Ipsolair dont les explications (et la bière ) qui m'ont encouragé à emprunter
+              cette voie.
             </p>
           </div>
         </section>
