@@ -211,27 +211,24 @@ const AvionBedelia = () => {
           </h2>
           <div className="space-y-4 font-body leading-relaxed">
             <p>
-              L'avion Bédélia était <strong>un objet de pointe technologique</strong>, apparu en 1910, seulement 4 ans
-              après le prix Ernest Archdeacon du kilomètre en circuit fermé. Mettre un moteur thermique, c'est juste une
-              reproduction du passé.
+              L'avion Bédélia représentait <strong>une véritable prouesse technologique en 1910</strong>. Y installer
+              aujourd'hui un moteur thermique ne serait qu'une simple reproduction du passé.
             </p>
             <p>
-              <strong>Mon but, dans une démarche d'innover et de faire avancer à mon humble taille l'aviation</strong>,
-              est d'y mettre un moteur électrique pour <strong>démocratiser cette technologie</strong>.
+              <strong>Mon objectif, à mon échelle, est de contribuer à faire progresser l'aviation.</strong> C'est
+              pourquoi j'ai choisi d'y intégrer un moteur électrique.
             </p>
             <p>
-              Certes, ça ne sera pas l'avion le plus fin, le plus aérodynamique ou le plus maniable, mais{" "}
+              Non pour en faire l'avion le plus rapide ou le plus élégant, mais pour démontrer que{" "}
               <strong>
-                si un fuselage de 115 ans peut voler avec un moteur électrique, alors tous nos aéronefs le peuvent
+                si un fuselage vieux de 115 ans peut voler à l'électrique, alors rien n'empêche nos aéronefs modernes
+                d'en faire autant
               </strong>
               .
             </p>
             <p className="text-muted-foreground italic">
-              Merci à Hugo de Ipsolair pour ces quelques explications autour d'une bière qui me poussent à prendre ce
-              chemin.
-            </p>
-            <p className="text-primary font-display text-lg mt-4">
-              Le premier avion d'avant la 1ère Guerre Mondiale retrofité ! :)
+              Un grand merci à Hugo d'Ipsolair dont les explications — partagées autour d'une bière — m'ont encouragé à
+              emprunter cette voie.
             </p>
           </div>
         </section>
