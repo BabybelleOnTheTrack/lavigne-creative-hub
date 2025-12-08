@@ -5,6 +5,7 @@ import avionBedelia from "@/assets/avion-bedelia.png";
 import bedeliaVoiture from "@/assets/bedelia-voiture.jpg";
 import planAvion from "@/assets/plan-avion-bedelia.png";
 import porcoRossoConcept from "@/assets/porco-rosso-concept.jpg";
+import bleriot11Prototype from "@/assets/bleriot-11-prototype.png";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const components = [
@@ -311,6 +312,16 @@ const AvionBedelia = () => {
               <span className="text-muted-foreground"> - mon ptit kiff</span>
             </li>
           </ul>
+        </section>
+
+        {/* Exemple prototype Blériot */}
+        <section className="mb-12">
+          <div className="border-2 border-border p-2 bg-card">
+            <img src={bleriot11Prototype} alt="Prototype d'un Blériot 11 volant" className="w-full" />
+            <p className="text-sm text-muted-foreground text-center mt-2 font-body">
+              Exemple d'un prototype d'un Blériot 11 volant
+            </p>
+          </div>
         </section>
       </main>
 
