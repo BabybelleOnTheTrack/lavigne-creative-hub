@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+import { ChevronLeft, ChevronRight, ExternalLink, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 interface Project {
   id: string;
@@ -9,6 +10,7 @@ interface Project {
   tags: string[];
   images: string[];
   link: string;
+  isInternal?: boolean;
 }
 
 interface ProjectCardProps {
@@ -104,12 +106,21 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           
           {/* Action */}
           <div>
-            <Button asChild variant="default" size="sm" className="gap-2 transition-transform duration-200 hover:scale-110">
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                Voir le projet
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
-            </Button>
+            {project.isInternal ? (
+              <Button asChild variant="default" size="sm" className="gap-2 transition-transform duration-200 hover:scale-110">
+                <Link to={project.link}>
+                  Voir le projet
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </Button>
+            ) : (
+              <Button asChild variant="default" size="sm" className="gap-2 transition-transform duration-200 hover:scale-110">
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  Voir le projet
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </Button>
+            )}
           </div>
         </div>
       </div>
