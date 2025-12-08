@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Download, ArrowLeft, Youtube } from "lucide-react";
+import { ExternalLink, Download, ArrowLeft, Youtube, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 import avionBedelia from "@/assets/avion-bedelia.png";
 import bedeliaVoiture from "@/assets/bedelia-voiture.jpg";
@@ -103,14 +103,12 @@ const AvionBedelia = () => {
                 Concept art Porco Rosso - Miyazaki
               </p>
             </div>
-            <a
-              href="https://www.instagram.com/babou_ama/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:underline inline-block"
-            >
-              → Voir l'avancement du projet
-            </a>
+            <Button asChild variant="outline" className="gap-2">
+              <a href="https://www.instagram.com/babou_ama/" target="_blank" rel="noopener noreferrer">
+                <Instagram className="w-4 h-4" />
+                Voir l'avancement du projet
+              </a>
+            </Button>
           </div>
 
           {/* Les 5 étapes */}
@@ -138,14 +136,6 @@ const AvionBedelia = () => {
                 <span>Réalisation de l'avion taille 1/1 - Le vrai, le grand, le magnifique !</span>
               </li>
             </ol>
-            <a
-              href="https://www.instagram.com/babou_ama/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:underline inline-block mt-4"
-            >
-              → Voir l'avancement du projet
-            </a>
           </div>
         </section>
 
@@ -210,6 +200,12 @@ const AvionBedelia = () => {
                 Voir mes autres plans
               </a>
             </Button>
+            <Button asChild variant="outline" className="gap-2">
+              <a href="https://www.instagram.com/babou_ama/" target="_blank" rel="noopener noreferrer">
+                <Instagram className="w-4 h-4" />
+                Voir l'avancement du projet
+              </a>
+            </Button>
           </div>
 
           <div className="border-2 border-border p-2 bg-card mt-6">
@@ -246,14 +242,12 @@ const AvionBedelia = () => {
               Un grand merci à Hugo d'Ipsolair dont les explications — partagées autour d'une bière — m'ont encouragé à
               emprunter cette voie.
             </p>
-            <a
-              href="https://www.instagram.com/ips_olaire/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:underline inline-block mt-2"
-            >
-              → Suivre leur aventure
-            </a>
+            <Button asChild variant="outline" className="gap-2 mt-2">
+              <a href="https://www.instagram.com/ips_olaire/" target="_blank" rel="noopener noreferrer">
+                <Instagram className="w-4 h-4" />
+                Suivre leur aventure
+              </a>
+            </Button>
           </div>
         </section>
 
