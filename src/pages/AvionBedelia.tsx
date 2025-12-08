@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import avionBedelia from "@/assets/avion-bedelia.png";
 import bedeliaVoiture from "@/assets/bedelia-voiture.jpg";
 import planAvion from "@/assets/plan-avion-bedelia.png";
+import porcoRossoConcept from "@/assets/porco-rosso-concept.jpg";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const components = [
@@ -96,6 +97,10 @@ const AvionBedelia = () => {
               Je vais donc construire une <strong>interprétation de l'avion Bédélia</strong>, en taille réelle, biplace
               et à moteur électrique.
             </p>
+            <div className="border-2 border-border p-1 bg-card w-64 my-4">
+              <img src={porcoRossoConcept} alt="Concept art Porco Rosso - Miyazaki" className="w-full" />
+              <p className="text-xs text-muted-foreground text-center mt-1 font-body">Concept art Porco Rosso - Miyazaki</p>
+            </div>
           </div>
 
           {/* Les 5 étapes */}
