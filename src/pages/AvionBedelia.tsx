@@ -136,8 +136,8 @@ const AvionBedelia = () => {
                 ))}
                 <TableRow className="bg-secondary">
                   <TableCell className="font-display">TOTAL</TableCell>
-                  <TableCell className="font-display">~265g</TableCell>
-                  <TableCell className="font-display">~98€</TableCell>
+                  <TableCell className="font-display">~138g + bois</TableCell>
+                  <TableCell className="font-display">67€</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
