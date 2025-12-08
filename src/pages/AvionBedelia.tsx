@@ -66,6 +66,12 @@ const AvionBedelia = () => {
               Redécouvert en 2015, nous ne possédons que très peu de documents à son sujet. Quelques photos d'époque et
               des descriptions fragmentaires sont tout ce qui reste de cette machine volante pionnière.
             </p>
+            <p className="font-body leading-relaxed text-primary">
+              Si vous possédez des informations ou des documents sur l'avion Bédélia, n'hésitez pas à nous contacter : {" "}
+              <a href="mailto:lesamisdebedelia@gmail.com" className="underline hover:no-underline">
+                lesamisdebedelia@gmail.com
+              </a>
+            </p>
             <div className="border-2 border-border p-2 bg-card my-6">
               <img src={avionBedelia} alt="L'avion Bédélia original - Photo d'époque de 1910" className="w-full" />
               <p className="text-sm text-muted-foreground text-center mt-2 font-body">
