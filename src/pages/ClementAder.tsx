@@ -34,11 +34,23 @@ const ClementAder = () => {
           <h2 className="font-display text-3xl md:text-4xl mb-6 border-b-2 border-border pb-2">
             Qui est Clément Ader ?
           </h2>
-          <p className="font-body text-sm md:text-lg leading-relaxed">
-            Clément Ader (1841-1925) est un ingénieur français, pionnier de l'aviation. Il est considéré comme l'un des
-            pères de l'aéronautique et l'inventeur du mot "avion". Son travail visionnaire a ouvert la voie à l'aviation
-            moderne.
-          </p>
+          <div className="space-y-4 font-body text-sm md:text-lg leading-relaxed">
+            <p>
+              Clément Ader est mon ingénieur préféré. Il a été un visionnaire dans tous les domaines qu'il a touchés : le vélo avec les pneus en caoutchouc, les chenilles pour les voitures (puis les tanks), la téléphonie et bien sûr l'avion.
+            </p>
+            <p>
+              C'est un homme qui a révolutionné notre monde. Malgré son immense fortune dans les années 1880-1890, il resta discret et travailla continuellement à la réalisation de son rêve : voler avec du plus lourd que l'air.
+            </p>
+            <p>
+              J'admire cet homme qui a travaillé toute sa vie en pensant toujours à demain, qui a tout fait pour que ses inventions soient utilisées et améliorent notre quotidien. J'admire aussi l'histoire de celui à qui tout a réussi pendant 30 ans, qui a échoué, non pas à voler, mais à faire entendre au monde que le plus lourd que l'air devait exister.
+            </p>
+            <p>
+              J'aime l'histoire qu'il nous enseigne. À notre époque où nos fusées sont de plus en plus grandes et nos ordinateurs de plus en plus puissants, n'oublions pas qu'un visionnaire peut discréditer son art par excès de vision. N'oublions pas également que c'est à nous, population, de donner la possibilité à ces visionnaires de bâtir le monde de demain, de ne pas les brider et de les aider.
+            </p>
+            <p className="italic text-muted-foreground">
+              Alors, en hommage, je répertorie ici les divers livres et témoignages que j'ai pu retrouver sur internet et dans ma bibliothèque.
+            </p>
+          </div>
         </section>
 
         {/* Sa Vie */}
