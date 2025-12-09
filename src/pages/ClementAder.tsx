@@ -74,7 +74,7 @@ const ClementAder = () => {
                     </p>
                     <p className="font-body text-xs md:text-sm text-muted-foreground">{doc.description}</p>
                   </div>
-                  <Button asChild variant={doc.type === "download" ? "default" : "outline"} className="gap-2 shrink-0 ml-4">
+                  <Button asChild variant={doc.type === "download" ? "default" : "default"} className={`gap-2 shrink-0 ml-4 ${doc.type === "link" ? "bg-primary text-primary-foreground hover:bg-primary/90" : ""}`}>
                     {doc.type === "download" ? (
                       <a href={doc.url} download>
                         <Download className="w-4 h-4" />
@@ -83,7 +83,7 @@ const ClementAder = () => {
                     ) : (
                       <a href={doc.url} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4" />
-                        Voir
+                        Lire
                       </a>
                     )}
                   </Button>
