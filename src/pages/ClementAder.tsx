@@ -3,10 +3,14 @@ import { ExternalLink, Download, ArrowLeft, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
 
 // Documents disponibles
-const documents: { name: string; description: string; type: "download" | "link"; url: string }[] = [
-  // Exemple de structure pour les futurs documents
-  // { name: "Document 1", description: "Description du document", type: "download", url: "/documents/doc1.pdf" },
-  // { name: "Document 2", description: "Lien externe", type: "link", url: "https://example.com" },
+const documents: { name: string; description: string; type: "download" | "link"; url: string; year?: string }[] = [
+  { 
+    name: "L'homme qui donna des ailes au monde - Clément Ader", 
+    description: "Livre de Louis Castex", 
+    type: "link", 
+    url: "https://archive.org/details/lhomme-qui-donna-des-ailes-au-monde-clement-ader-louis-castex/mode/2up",
+    year: "1947"
+  },
 ];
 
 const ClementAder = () => {
@@ -51,6 +55,46 @@ const ClementAder = () => {
               Alors, en hommage, je répertorie ici les divers livres et témoignages que j'ai pu retrouver sur internet et dans ma bibliothèque.
             </p>
           </div>
+        </section>
+
+        {/* Documents */}
+        <section className="mb-12 border-2 border-border bg-card p-6">
+          <h2 className="font-display text-2xl md:text-3xl mb-6 flex items-center gap-3">
+            <FileText className="w-6 h-6" />
+            Documents
+          </h2>
+
+          {documents.length > 0 ? (
+            <div className="space-y-4">
+              {documents.map((doc, index) => (
+                <div key={index} className="flex items-center justify-between border-b border-border pb-3 last:border-b-0">
+                  <div>
+                    <p className="font-body text-sm md:text-base font-medium">
+                      {doc.name} {doc.year && <span className="text-muted-foreground">({doc.year})</span>}
+                    </p>
+                    <p className="font-body text-xs md:text-sm text-muted-foreground">{doc.description}</p>
+                  </div>
+                  <Button asChild variant={doc.type === "download" ? "default" : "outline"} className="gap-2 shrink-0 ml-4">
+                    {doc.type === "download" ? (
+                      <a href={doc.url} download>
+                        <Download className="w-4 h-4" />
+                        Télécharger
+                      </a>
+                    ) : (
+                      <a href={doc.url} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4" />
+                        Voir
+                      </a>
+                    )}
+                  </Button>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className="font-body text-sm md:text-base text-muted-foreground italic">
+              Documents à venir... Revenez bientôt !
+            </p>
+          )}
         </section>
 
         {/* Sa Vie */}
@@ -152,43 +196,6 @@ const ClementAder = () => {
           </div>
         </section>
 
-        {/* Documents */}
-        <section className="mb-12 border-2 border-border bg-card p-6">
-          <h2 className="font-display text-2xl md:text-3xl mb-6 flex items-center gap-3">
-            <FileText className="w-6 h-6" />
-            Documents
-          </h2>
-
-          {documents.length > 0 ? (
-            <div className="space-y-4">
-              {documents.map((doc, index) => (
-                <div key={index} className="flex items-center justify-between border-b border-border pb-3">
-                  <div>
-                    <p className="font-body text-sm md:text-base font-medium">{doc.name}</p>
-                    <p className="font-body text-xs md:text-sm text-muted-foreground">{doc.description}</p>
-                  </div>
-                  <Button asChild variant={doc.type === "download" ? "default" : "outline"} className="gap-2">
-                    {doc.type === "download" ? (
-                      <a href={doc.url} download>
-                        <Download className="w-4 h-4" />
-                        Télécharger
-                      </a>
-                    ) : (
-                      <a href={doc.url} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-4 h-4" />
-                        Voir
-                      </a>
-                    )}
-                  </Button>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <p className="font-body text-sm md:text-base text-muted-foreground italic">
-              Documents à venir... Revenez bientôt !
-            </p>
-          )}
-        </section>
 
         {/* Ressources externes */}
         <section className="mb-12">
