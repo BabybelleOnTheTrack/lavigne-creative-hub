@@ -42,7 +42,8 @@ export const projects: Project[] = [
       "Site web dédié à Clément Ader, pionnier de l'aviation française. Découvrez l'histoire de cet inventeur visionnaire et ses contributions majeures à l'aéronautique.",
     tags: ["Web", "Histoire", "Aéronautique"],
     images: [projectImage, projectImage, projectImage],
-    link: "https://google.com",
+    link: "/clement-ader",
+    isInternal: true,
   },
   {
     id: "secret-santa",
