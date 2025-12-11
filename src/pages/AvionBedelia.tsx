@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Download, ArrowLeft, Youtube, Instagram } from "lucide-react";
+import { ExternalLink, Download, ArrowLeft, Youtube, Instagram, Box } from "lucide-react";
 import { Link } from "react-router-dom";
 import avionBedelia from "@/assets/avion-bedelia.png";
 import bedeliaVoiture from "@/assets/bedelia-voiture.jpg";
@@ -7,6 +7,7 @@ import planAvion from "@/assets/plan-avion-bedelia.png";
 import porcoRossoConcept from "@/assets/porco-rosso-concept.jpg";
 import bleriot11Prototype from "@/assets/bleriot-11-prototype.png";
 import brevetBedelia from "@/assets/brevet-bedelia.png";
+import avion3dModel from "@/assets/avion-bedelia-3d-model.png";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const components = [
@@ -33,6 +34,13 @@ const AvionBedelia = () => {
           </Link>
           <h1 className="font-display text-2xl md:text-3xl tracking-wide">AVION BÉDÉLIA</h1>
         </div>
+        {/* Sub-navigation */}
+        <nav className="container py-2 flex gap-4 border-t border-border">
+          <Link to="/avion-bedelia" className="font-display text-sm text-primary border-b-2 border-primary pb-1">1/9</Link>
+          <Link to="/avion-bedelia/1-6" className="font-display text-sm hover:text-primary transition-colors">1/6</Link>
+          <Link to="/avion-bedelia/1-3" className="font-display text-sm hover:text-primary transition-colors">1/3</Link>
+          <Link to="/avion-bedelia/1-1" className="font-display text-sm hover:text-primary transition-colors">1/1</Link>
+        </nav>
       </header>
 
       <main className="container py-8 max-w-4xl">
@@ -327,6 +335,29 @@ const AvionBedelia = () => {
               Exemple d'un prototype d'un Blériot 11 en cours de réalisation - AVION LAVIGNE
             </p>
           </div>
+        </section>
+
+        {/* Modélisation 3D */}
+        <section className="mb-12">
+          <h2 className="font-display text-2xl md:text-3xl mb-6 border-b-2 border-border pb-2">
+            <Box className="inline w-6 h-6 mr-2" />
+            Modélisation 3D
+          </h2>
+          <p className="font-body text-xs md:text-base leading-relaxed mb-6">
+            Téléchargez le modèle 3D de l'avion Bédélia pour l'explorer ou l'imprimer en 3D.
+          </p>
+          <div className="border-2 border-border p-2 bg-card mb-6">
+            <img src={avion3dModel} alt="Modèle 3D de l'avion Bédélia" className="w-full" />
+            <p className="text-sm text-muted-foreground text-center mt-2 font-body">
+              Aperçu du modèle 3D
+            </p>
+          </div>
+          <Button asChild className="gap-2">
+            <a href="/models/avion-bedelia.blend" download="avion-bedelia.blend">
+              <Download className="w-4 h-4" />
+              Télécharger le modèle 3D
+            </a>
+          </Button>
         </section>
       </main>
 
