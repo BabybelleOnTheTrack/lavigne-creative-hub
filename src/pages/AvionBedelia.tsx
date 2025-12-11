@@ -230,6 +230,29 @@ const AvionBedelia = () => {
           </div>
         </section>
 
+        {/* Modélisation 3D */}
+        <section className="mb-12">
+          <h2 className="font-display text-2xl md:text-3xl mb-6 border-b-2 border-border pb-2">
+            <Box className="inline w-6 h-6 mr-2" />
+            Modélisation 3D
+          </h2>
+          <p className="font-body text-xs md:text-base leading-relaxed mb-6">
+            Téléchargez le modèle 3D de l'avion Bédélia pour l'explorer ou l'imprimer en 3D.
+          </p>
+          <div className="border-2 border-border p-2 bg-card mb-6">
+            <img src={avion3dModel} alt="Modèle 3D de l'avion Bédélia" className="w-full" />
+            <p className="text-sm text-muted-foreground text-center mt-2 font-body">
+              Aperçu du modèle 3D
+            </p>
+          </div>
+          <Button asChild className="gap-2">
+            <a href="/models/avion-bedelia.blend" download="avion-bedelia.blend">
+              <Download className="w-4 h-4" />
+              Télécharger le modèle 3D
+            </a>
+          </Button>
+        </section>
+
         {/* Moteur électrique */}
         <section className="mb-12">
           <h2 className="font-display text-2xl md:text-3xl mb-6 border-b-2 border-border pb-2">
@@ -337,28 +360,6 @@ const AvionBedelia = () => {
           </div>
         </section>
 
-        {/* Modélisation 3D */}
-        <section className="mb-12">
-          <h2 className="font-display text-2xl md:text-3xl mb-6 border-b-2 border-border pb-2">
-            <Box className="inline w-6 h-6 mr-2" />
-            Modélisation 3D
-          </h2>
-          <p className="font-body text-xs md:text-base leading-relaxed mb-6">
-            Téléchargez le modèle 3D de l'avion Bédélia pour l'explorer ou l'imprimer en 3D.
-          </p>
-          <div className="border-2 border-border p-2 bg-card mb-6">
-            <img src={avion3dModel} alt="Modèle 3D de l'avion Bédélia" className="w-full" />
-            <p className="text-sm text-muted-foreground text-center mt-2 font-body">
-              Aperçu du modèle 3D
-            </p>
-          </div>
-          <Button asChild className="gap-2">
-            <a href="/models/avion-bedelia.blend" download="avion-bedelia.blend">
-              <Download className="w-4 h-4" />
-              Télécharger le modèle 3D
-            </a>
-          </Button>
-        </section>
       </main>
 
       {/* Footer */}
